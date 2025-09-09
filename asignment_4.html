@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flipkart Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: rgb(226, 235, 235);
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            height: 70px;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            gap: 20px;
+        }
+
+        /* Logo */
+        nav img.logo {
+            width: 100px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        /* Search Box */
+        section.search {
+            display: flex;
+            flex-grow: 1;
+            background-color: #f1f3f6;
+            border-radius: 5px;
+            padding: 5px;
+            align-items: center;
+            max-width: 600px;
+        }
+
+        section.search input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 14px;
+        }
+
+        section.search button {
+            background-color: #2874f0;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Login Button */
+        button.login {
+            background-color: white;
+            color: #2874f0;
+            border: 1px solid #2874f0;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Cart, Seller & Dot Icons */
+        img.cart,
+        img.seller,
+        img.dot {
+            height: 35px;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+        /* Categories Section */
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 20px;
+            background-color: white;
+            padding: 20px;
+            margin-top: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .category img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 5px;
+        }
+
+        .category figcaption {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <!-- Logo -->
+        <img src="flipkart_logo.PNG" alt="Flipkart Logo" class="logo">
+
+        <!-- Search -->
+        <section class="search">
+            <input type="text" placeholder="Search for products, brands and more">
+            <button>Search</button>
+        </section>
+
+        <!-- Login -->
+        <button class="login">Login</button>
+
+        <!-- Cart -->
+        <img src="card.PNG" alt="Cart" class="cart">
+
+        <!-- Seller -->
+        <img src="become.PNG" alt="Become a Seller" class="seller">
+
+        <!-- Dot -->
+        <img src="dot.PNG" alt="More Options" class="dot">
+    </nav>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <figure class="category">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/29327f40e9c4d26b.png" alt="Grocery">
+            <figcaption>Grocery</figcaption>
+        </figure>
+
+        <figure class="category">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/5f2ee7f883cdb774.png?q=100" alt="Mobiles">
+            <figcaption>Mobiles</figcaption>
+        </figure>
+
+        <figure class="category">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/0d75b34f7d8fbcb3.png" alt="Fashion">
+            <figcaption>Fashion</figcaption>
+        </figure>
+
+        <figure class="category">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/69c6589653afdb9a.png" alt="Electronics">
+            <figcaption>Electronics</figcaption>
+        </figure>
+
+        <figure class="category">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/ab7e2b022a4587dd.png" alt="Home">
+            <figcaption>Home</figcaption>
+        </figure>
+
+        <figure class="category">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/0ff199d1bd27eb98.png" alt="Appliances">
+            <figcaption>Appliances</figcaption>
+        </figure>
+
+        <figure class="category">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/71050627a56b4693.png" alt="Travel">
+            <figcaption>Travel</figcaption>
+        </figure>
+
+        <figure class="category">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/dff3f7adcf3a90c6.png" alt="Top Offers">
+            <figcaption>Top Offers</figcaption>
+        </figure>
+
+        <figure class="category">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/05d708653beff580.png" alt="Beauty">
+            <figcaption>Beauty</figcaption>
+        </figure>
+    </section>
+
+</body>
+</html>
